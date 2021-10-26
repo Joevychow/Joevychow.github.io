@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <head>
+  <body>
+    <ul class="nav nav-tabs">
+      <li role="presentation"><a href="#">Home</a></li>
+      <li role="presentation" class="active"><a href="go.html">Go</a></li>
+      <li role="presentation"><a href="php.html">PHP</a></li>
+    </ul>
+    <div id="app">
+      {{ message }}
+    </div>
+    <script type="text/javascript">
+      var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Here is Go page!'
+        }
+      })
+    </script>
+  </body>
+</html>
